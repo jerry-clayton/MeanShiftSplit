@@ -41,5 +41,5 @@ print(length(point_clouds))
 for (tile in 1:length(point_clouds)){
      filecount <- filecount + 1
      curr <- point_clouds[tile]
-     saveRDS(curr,paste0(output_dir,input_tile_name,"_pc_",filecount))
+     saveRDS(curr,paste0(output_dir,input_tile_name,"_pc_",filecount,".rds"))
 }
