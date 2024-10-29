@@ -21,10 +21,6 @@ if [[ $? -ne 0 ]]; then
   exit 1
 fi
 
-mkdir -p output
-find . > output/find.txt
-# find ${basedir}
-# find . -type f > output/findf.txt
 parent_path=$(realpath .)
 infile=$(ls input | head -n 1)
 
