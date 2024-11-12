@@ -20,7 +20,7 @@ if [[ $? -ne 0 ]]; then
   echo "Failed to activate the conda environment 'ms-env'."
   exit 1
 fi
-
+mkdir -p output
 parent_path=$(realpath .)
 infile=$(ls input | head -n 1)
 
